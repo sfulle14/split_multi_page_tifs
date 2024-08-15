@@ -2,10 +2,13 @@
 This program is used to split multi-page tif files so that each page is its own file.
 
 ## Dependencies 
-tkinter (filedialog, messagebox, ttk)  
-PIL (Image)  
+tkinter
+Pillow 
 Python  
-
+To install the dependencies you can run:  
+  pip install -r requirements.txt  
+After navigating the the folder that the requirements.txt file is in.
+  
 ## Functionality
 This program is designed to take multi-page tifs and split them up into their own individual files.  
 The files to split can be selected one at a time or as a bulk select.
