@@ -10,9 +10,10 @@ def split_tif(input_files, output_folder, progress_bar):
 
     for input_file in input_files:
         with Image.open(input_file) as img:
+            base_name = os.path.splitext(os.path.basename(input_file))[0]  # Get the base name without extension
             for i in range(img.n_frames):
                 img.seek(i)
-                output_path = os.path.join(output_folder, f'{os.path.basename(input_file)}_page_{i + 1}.tif')
+                output_path = os.path.join(output_folder, f'{base_name}_page_{i + 1}.tif')  # Use base name
                 img.save(output_path)  # Save to the specified output folder
                 progress_bar['value'] += 1  # Update progress bar
                 root.update_idletasks()  # Update the UI
