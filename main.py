@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#!  pip install -r requirements.txt
+
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk  # Import ttk for Progressbar
