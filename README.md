@@ -6,7 +6,7 @@ tkinter
 Pillow 
 Python  
 To install the dependencies you can run:  
-    pip install -r requirements.txt  
+   * pip install -r requirements.txt  
 After navigating the the folder that the requirements.txt file is in.
   
 ## Functionality
